@@ -1,0 +1,12 @@
+Opis dzia³ania:
+Keylogger - wiadomo odczytuje znaki i zapisuje do pliku.
+(plik tworzony przez keylogger ma rozszerzenie sys ale wystarczy otworzyæ notatnikiem - taka uwaga)
+SERWER - gdy nawia¿e po³¹czenie z klientem odczytuje plik utworzony przez keyloger.
+Client - nawi¹zuje po³¹czenie ze wskazanym IP na porcie 3333 .
+Jeœli uda siê nawiazaæ po³¹czenie to wyœwietli zawartoœæ pliku tworzonego przez keylogger.
+
+UWAGI:
+*Wymaga dopracowania gdy¿ client otrzymuje od serwera tylko pierwsz¹ linijkê z pliku - a co jêœli wciœnie siê enter ....
+*Najpierw uruchamiasz serwer a potem client .
+*Wrazie czego pisz na forum i jak by by³e g³upie b³êdy to nie zwracaj uwagi
+- to dawny projekt.

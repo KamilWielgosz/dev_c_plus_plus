@@ -1,0 +1,32 @@
+# Project: Projekt1
+# Makefile created by Dev-C++ 5.2.0.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = glowny.o przyrzad.o $(RES)
+LINKOBJ  = glowny.o przyrzad.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc  
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" 
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" 
+BIN      = Projekt1.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS   = $(INCS)  
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Projekt1.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Projekt1.exe" $(LIBS)
+
+glowny.o: glowny.cpp
+	$(CPP) -c glowny.cpp -o glowny.o $(CXXFLAGS)
+
+przyrzad.o: przyrzad.cpp
+	$(CPP) -c przyrzad.cpp -o przyrzad.o $(CXXFLAGS)
